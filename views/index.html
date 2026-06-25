@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha Social Media Task</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <div class="app-wrapper">
+        
+        <aside class="app-sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-layer-group brand-icon"></i>
+                <span class="brand-text">Alpha<span>Pulse</span></span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active"><i class="fa-solid fa-house"></i> Feed</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-hashtag"></i> Explore</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-bell"></i> Notifications</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-user"></i> Profile</a>
+            </nav>
+
+            <div class="profile-widget">
+                <div class="profile-avatar-wrapper">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Avatar" class="user-avatar">
+                    <span class="online-indicator"></span>
+                </div>
+                <div class="profile-info">
+                    <h4>CodeAlpha Intern</h4>
+                    <p>@developer_alpha</p>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-box"><strong>924</strong><span>Followers</span></div>
+                    <div class="stat-box"><strong>512</strong><span>Following</span></div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="app-main">
+            <header class="feed-header">
+                <h2>Home Feed</h2>
+                <span class="badge">Task 2 Live</span>
+            </header>
+
+            <div class="glass-card creator-card">
+                <div class="creator-input-row">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Avatar" class="mini-avatar">
+                    <textarea id="postContent" placeholder="Share your code milestone, thoughts, or ideas..."></textarea>
+                </div>
+                <div class="creator-actions-row">
+                    <div class="media-options">
+                        <button class="media-btn"><i class="fa-regular fa-image"></i></button>
+                        <button class="media-btn"><i class="fa-solid fa-code"></i></button>
+                        <button class="media-btn"><i class="fa-regular fa-face-smile"></i></button>
+                    </div>
+                    <button id="submitPostBtn" class="btn-gradient">Publish Post <i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+
+            <div id="postsFeed" class="feed-stream">
+                </div>
+        </main>
+        
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
